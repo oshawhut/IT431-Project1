@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Hunter x Hunter",
+    "rating": "9 ⭐",
+    "volume": "20",
+    "review": "The shounen GOAT",
+    "id": 1,
+    "imageUrl": "https://cdn.myanimelist.net/images/manga/2/253119.jpg"
+  },
+  {
+    "title": "Jojo's Bizarre Adventure",
+    "rating": "9 ⭐",
+    "volume": "61",
+    "review": "When avant garde meets muscle",
+    "id": 2,
+    "imageUrl": "https://cdn.myanimelist.net/images/manga/2/269908.jpg"
+  },
+  {
+    "title": "Pokemon Special",
+    "rating": "8 ⭐",
+    "volume": "4",
+    "review": "Good spin on the games",
+    "imageUrl": "https://cdn.myanimelist.net/images/manga/2/265951.jpg",
+    "id": 3
+  },
+  {
+    "title": "Cardcaptor Sakura",
+    "rating": "9 ⭐",
+    "volume": "9",
+    "review": "Classis mahou shoujo",
+    "imageUrl": "https://cdn.myanimelist.net/images/manga/3/259289.jpg",
+    "id": 4
+  }
+]
