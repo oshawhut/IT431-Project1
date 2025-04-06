@@ -68,7 +68,7 @@ export default function DeleteMangaButton({ mangaId }: DeleteMangaButtonProps) {
 						<AlertDialogCancel>Cancel</AlertDialogCancel>
 						<AlertDialogAction
 							onClick={handleDelete}
-							className="bg-gradient-to-r from-red-500 hover:from-red-600 hover:to-red-800"
+							className="bg-gradient-to-r bg-red-500 hover:bg-red-800"
 						>
 							Delete
 						</AlertDialogAction>

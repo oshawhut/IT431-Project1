@@ -86,7 +86,7 @@ export default function AddMangaPage() {
 								required
 								value={formData.title}
 								onChange={handleChange}
-								className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+								className="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 focus:border-transparent"
 								placeholder="Enter manga title"
 							/>
 						</div>
@@ -101,7 +101,7 @@ export default function AddMangaPage() {
 								type="number"
 								value={formData.rating}
 								onChange={handleChange}
-								className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+								className="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 focus:border-transparent"
 								placeholder="Enter your rating"
 							/>
 						</div>
@@ -116,7 +116,7 @@ export default function AddMangaPage() {
 								type="number"
 								value={formData.volume}
 								onChange={handleChange}
-								className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+								className="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 focus:border-transparent"
 								placeholder="Enter volume you're currently on"
 							/>
 						</div>
@@ -131,7 +131,7 @@ export default function AddMangaPage() {
 								type="text"
 								value={formData.review}
 								onChange={handleChange}
-								className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+								className="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 focus:border-transparent"
 								placeholder="Enter your review on the manga"
 							/>
 						</div>
@@ -146,7 +146,7 @@ export default function AddMangaPage() {
 								type="text"
 								value={formData.imageUrl}
 								onChange={handleChange}
-								className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+								className="w-full p-2 border rounded focus:ring-2 focus:ring-teal-500 focus:border-transparent"
 								placeholder="Provide a URL to the manga cover art"
 							/>
 						</div>
@@ -154,7 +154,7 @@ export default function AddMangaPage() {
 						<div className="pt-4">
 							<Button
 								type="submit"
-								className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800"
+								className="w-full bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800"
 								disabled={loading}
 							>
 								{loading ? "Adding Manga..." : "Add Manga"}

@@ -221,7 +221,7 @@ export default function EditMangaPage({ params }: EditMangaPageProps) {
 						<div className="pt-4">
 							<Button
 								type="submit"
-								className="w-full bg-gradient-to-r bg-teal-600 hover:from-teal-600 hover:to-teal-800"
+								className="w-full bg-gradient-to-r bg-teal-600 hover:bg-teal-800"
 								disabled={saving}
 							>
 								{saving ? "Saving Changes..." : "Save Changes"}
