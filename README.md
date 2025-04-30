@@ -1,6 +1,8 @@
 # IT431-DL1 Project Application
 
-This is a manga management web app inspired by MAL and Anilist for my IT431's project. This is built with [Next.js](https://nextjs.org) and showcases CRUD (Create, Read, Update, Delete) utilizing mongoDB as the backend. It has a very minimalist UI to offer a calm, zen-like experience for the end user.
+This is a manga management web app inspired by MAL and Anilist for my IT431's project. It offers a calm, zen-like experience through its minimalist UI. 
+
+This is built with [Next.js](https://nextjs.org) and showcases CRUD (Create, Read, Update, Delete) utilizing mongoDB as the backend. Originally forked from Prof. Michak's [repository](https://github.com/rmichak/IT431-NextJS-Sample-Courses). 
 
 ## Features
 
