@@ -44,7 +44,7 @@ export default function Header() {
 							</li>
 						</ul>
 					</nav>
-					{/* <div className="ml-auto flex items-center gap-4">
+					<div className="ml-auto flex items-center gap-4">
 						<SignedIn>
 							<UserButton />
 						</SignedIn>
@@ -55,7 +55,7 @@ export default function Header() {
 								</button>
 							</SignInButton>
 						</SignedOut>
-					</div> */}
+					</div>
 					<div className="flex items-center gap-4">
 						<button className="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
 							<span className="sr-only">Toggle menu</span>

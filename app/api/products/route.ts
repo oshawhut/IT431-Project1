@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { Manga } from "@/types/manga";
 import clientPromise from "@/lib/mongodb";
-
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 // import fs from "fs";
 // import path from "path";
 
