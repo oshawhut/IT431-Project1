@@ -37,7 +37,6 @@ async function getManga(): Promise<Manga[]> {
 
 const Home: FC = async () => {
 	const mangaList = await getManga();
-
 	return (
 		<div>
 			<main className="container mx-auto px-16 py-8 pt-30 pb-20">

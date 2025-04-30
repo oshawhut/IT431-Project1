@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Courses App",
-	description: "Written by Randy Michak",
+	title: "IT431-DL1 Project ",
+	description: "Written by Madina Ea, Foundation provided by Randy Michak",
 };
 
 export default function RootLayout({
@@ -26,16 +26,16 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<ClerkProvider>
-			<html lang="en">
-				<body
-					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-				>
-					<Header />
-					<main>{children}</main>
-					<Footer />
-				</body>
-			</html>
-		</ClerkProvider>
+		//<ClerkProvider>
+		<html lang="en">
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+			>
+				<Header />
+				<main>{children}</main>
+				<Footer />
+			</body>
+		</html>
+		//</ClerkProvider>
 	);
 }

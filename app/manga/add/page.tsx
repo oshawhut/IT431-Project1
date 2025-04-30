@@ -48,8 +48,8 @@ export default function AddMangaPage() {
 				throw new Error("Failed to add manga");
 			}
 
-			// Redirect to home page after successful creation
-			router.push("/");
+			// Redirect to manga library after successful creation
+			router.push("/manga");
 			router.refresh(); // Refresh the page data
 		} catch (error) {
 			console.error("Error adding manga:", error);

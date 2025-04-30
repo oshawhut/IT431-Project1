@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import { Manga } from "@/types/manga";
+import { use } from "react";
 
 interface EditMangaPageProps {
 	params: {
@@ -16,6 +17,7 @@ interface EditMangaPageProps {
 export default function EditMangaPage({ params }: EditMangaPageProps) {
 	const router = useRouter();
 	// Note: On client components, we don't need to await params since they're already resolved
+
 	const mangaId = parseInt(params.id, 10);
 
 	const [loading, setLoading] = useState(true);
@@ -97,7 +99,7 @@ export default function EditMangaPage({ params }: EditMangaPageProps) {
 			}
 
 			// Redirect to manga details page after successful update
-			router.push(`/manga/${mangaId}`);
+			router.push("/manga");
 			router.refresh(); // Refresh the page data
 		} catch (error) {
 			console.error("Error updating manga:", error);
