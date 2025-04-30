@@ -2,7 +2,6 @@ import { FC } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import Header from "@/components/Header";
 import DeleteMangaButton from "@/components/DeleteMangaButton";
 import { Manga } from "@/types/manga";
 

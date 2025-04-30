@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import { Manga } from "@/types/manga";
-import { use } from "react";
 
 interface EditMangaPageProps {
 	params: {
