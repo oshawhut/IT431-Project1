@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/nextjs";
 
 export default function Header() {
 	return (
@@ -42,7 +44,19 @@ export default function Header() {
 							</li>
 						</ul>
 					</nav>
-
+					{/* Auth buttons outside of <ul> */}
+					<div className="ml-auto flex items-center gap-4">
+						<SignedIn>
+							<UserButton />
+						</SignedIn>
+						<SignedOut>
+							<SignInButton mode="modal">
+								<button className="px-4 py-2 text-sm font-medium border border-teal-600 text-teal-600 bg-white hover:bg-teal-50 rounded transition">
+									Sign In
+								</button>
+							</SignInButton>
+						</SignedOut>
+					</div>
 					<div className="flex items-center gap-4">
 						<button className="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">
 							<span className="sr-only">Toggle menu</span>

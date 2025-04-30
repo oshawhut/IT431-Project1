@@ -2,6 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import MangaCard from "@/components/MangaCard";
 
 interface Manga {
@@ -22,10 +23,10 @@ async function getManga(): Promise<Manga[]> {
 			cache: "no-store", // Disable caching for this request
 		});
 
-		if (!res.ok) {
-			console.error("API response error:", await res.text());
-			throw new Error(`Failed to fetch manga: ${res.status}`);
-		}
+		// if (!res.ok) {
+		// 	console.error("API response error:", await res.text());
+		// 	throw new Error(`Failed to fetch manga: ${res.status}`);
+		// }
 
 		return res.json();
 	} catch (error) {
@@ -39,7 +40,6 @@ const Home: FC = async () => {
 
 	return (
 		<div>
-			<Header />
 			<main className="container mx-auto px-16 py-8">
 				<div className="flex justify-between items-center mb-8 px-8">
 					<h1 className="text-3xl font-bold text-center">My List</h1>
@@ -62,9 +62,6 @@ const Home: FC = async () => {
 					</div>
 				)}
 			</main>
-			<footer className="py-6 text-center text-gray-500 text-sm">
-				© {new Date().getFullYear()} MangaBox (For educational purposes)
-			</footer>
 		</div>
 	);
 };
