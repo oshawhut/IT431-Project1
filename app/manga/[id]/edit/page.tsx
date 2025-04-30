@@ -122,8 +122,7 @@ export default function EditMangaPage({ params }: EditMangaPageProps) {
 
 	return (
 		<div>
-			<Header />
-			<main className="container mx-auto px-4 py-8">
+			<main className="container mx-auto px-16 py-8 pt-30">
 				<div className="max-w-2xl mx-auto">
 					<div className="flex justify-between items-center mb-6">
 						<h1 className="text-2xl font-bold">Edit Manga Information</h1>

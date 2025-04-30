@@ -4,7 +4,7 @@ import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/nextjs";
 
 export default function Header() {
 	return (
-		<header className="bg-white">
+		<header className="fixed top-0 left-0 w-full bg-white py-4 text-gray-500 text-sm shadow z-50">
 			<div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
 				<a className="block text-teal-600" href="/">
 					<span className="sr-only">Home</span>
@@ -39,7 +39,7 @@ export default function Header() {
 									href="/manga"
 								>
 									{" "}
-									My List{" "}
+									Manga{" "}
 								</a>
 							</li>
 						</ul>

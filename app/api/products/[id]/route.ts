@@ -127,15 +127,19 @@ export async function DELETE(
 			return NextResponse.json({ error: "Invalid manga ID." }, { status: 400 });
 		}
 
-		let mangaList = readManga();
-		const initialLength = mangaList.length;
-		mangaList = mangaList.filter((m) => m.id !== mangaId);
+		// let mangaList = readManga();
+		// const initialLength = mangaList.length;
+		// mangaList = mangaList.filter((m) => m.id !== mangaId);
 
-		if (mangaList.length === initialLength) {
-			return NextResponse.json({ error: "Manga not found." }, { status: 404 });
-		}
+		// if (mangaList.length === initialLength) {
+		// 	return NextResponse.json({ error: "Manga not found." }, { status: 404 });
+		// }
 
-		writeManga(mangaList);
+		// writeManga(mangaList);
+
+		const client = await clientPromise;
+		const db = client.db("it431project");
+		const manga = await db.collection("manga").deleteOne({ id: mangaId });
 
 		return NextResponse.json(
 			{ message: `Manga with ID ${mangaId} deleted.` },

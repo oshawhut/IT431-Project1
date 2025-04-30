@@ -41,8 +41,7 @@ const MangaPage: FC<MangaPageProps> = async ({ params }) => {
 
 		return (
 			<div>
-				<Header />
-				<main className="container mx-auto px-4 py-8">
+				<main className="container mx-auto px-16 py-8 pt-30">
 					<div className="max-w-3xl mx-auto">
 						<div className="mb-6">
 							<Button asChild variant="outline" className="mb-4">

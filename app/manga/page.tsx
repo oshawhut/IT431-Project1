@@ -40,7 +40,7 @@ const Home: FC = async () => {
 
 	return (
 		<div>
-			<main className="container mx-auto px-16 py-8">
+			<main className="container mx-auto px-16 py-8 pt-30 pb-20">
 				<div className="flex justify-between items-center mb-8 px-8">
 					<h1 className="text-3xl font-bold text-center">My List</h1>
 					<Link href="/manga/add">
