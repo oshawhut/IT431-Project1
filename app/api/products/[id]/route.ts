@@ -142,10 +142,7 @@ export async function DELETE(
 		const db = client.db("it431project");
 		const manga = await db.collection("manga").deleteOne({ id: mangaId });
 
-		return NextResponse.json(
-			{ message: `Manga with ID ${mangaId} deleted.` },
-			{ status: 200 }
-		);
+		return NextResponse.json(manga, { status: 200 });
 	} catch (error) {
 		console.error("Error deleting manga:", error);
 		return NextResponse.json(

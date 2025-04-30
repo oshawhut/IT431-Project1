@@ -60,7 +60,7 @@ export default function DeleteMangaButton({ mangaId }: DeleteMangaButtonProps) {
 					<AlertDialogHeader>
 						<AlertDialogTitle>Are you sure?</AlertDialogTitle>
 						<AlertDialogDescription>
-							This will permanently delete what you're currently reading. You
+							This will permanently delete what you are currently reading. You
 							will have to resubmit it again.
 						</AlertDialogDescription>
 					</AlertDialogHeader>
