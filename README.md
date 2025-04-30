@@ -2,7 +2,9 @@
 
 This is a manga management web app inspired by MAL and Anilist for my IT431's project. It offers a calm, zen-like experience through its minimalist UI. 
 
-This is built with [Next.js](https://nextjs.org) and showcases CRUD (Create, Read, Update, Delete) utilizing mongoDB as the backend. Originally forked from Prof. Michak's [repository](https://github.com/rmichak/IT431-NextJS-Sample-Courses). 
+This is built with [Next.js](https://nextjs.org) and showcases CRUD (Create, Read, Update, Delete) utilizing mongoDB as the backend. Originally forked from Prof. Michak's [repository](https://github.com/rmichak/IT431-NextJS-Sample-Courses).
+
+[Project Demonstration via YouTube](https://www.youtube.com/watch?v=4xaBFeur-3U)
 
 ## Features
 
